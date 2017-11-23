@@ -1,9 +1,8 @@
 # race-game-phaser.io
 Prototype of a race game using Phaser.io
 
-
 # Installation :
-./npm install
+npm install
 
 # Execution
 http-server -p 8080
