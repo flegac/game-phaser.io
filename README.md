@@ -1,5 +1,5 @@
 # game-phaser.io
-Prototype of a race game using Phaser.io
+This project is a 2D game prototype using Phaser.io.
 
 # Installation :
 npm install
