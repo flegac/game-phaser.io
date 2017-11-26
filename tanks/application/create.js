@@ -61,7 +61,7 @@ function create() {
     }
 
 
-    logo = game.add.sprite(windowWidth/2-400, windowHeight/2-2  00, 'logo');
+    logo = game.add.sprite(windowWidth/2-400, windowHeight/2-200, 'logo');
     logo.fixedToCamera = true;
 
     game.input.onDown.add(removeLogo, this);
