@@ -1,10 +1,9 @@
-# race-game-phaser.io
+# game-phaser.io
 Prototype of a race game using Phaser.io
 
 # Installation :
 npm install
 
 # Execution
-http-server -p 8080
-
-http://localhost:8080
+- execute run.bat
+- open http://localhost:8080
