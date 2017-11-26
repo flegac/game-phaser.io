@@ -1,12 +1,10 @@
-
-
 EnemyTank = function (index, game, player, bullets) {
 
     var x = game.world.randomX;
     var y = game.world.randomY;
 
     this.game = game;
-    this.health = 3;
+    this.health = 5;
     this.player = player;
     this.bullets = bullets;
     this.fireRate = 1000;

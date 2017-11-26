@@ -3,7 +3,6 @@
 
 var worldWidth = 50000;
 var worldHeight = 50000;
-var maxSpeed = 800;
 
 
 var land;
@@ -19,17 +18,13 @@ var explosions;
 
 function create() {
     //  Resize our game world to be a 2000 x 2000 square
-    game.world.setBounds(-worldWidth/2, -worldHeight/2, worldWidth, worldHeight);
+    game.world.setBounds(-worldWidth / 2, -worldHeight / 2, worldWidth, worldHeight);
 
     //  Our tiled scrolling background
-    land = game.add.tileSprite(0, 0, width, height, 'earth');
+    land = game.add.tileSprite(0, 0, windowWidth, windowHeight, 'earth');
     land.fixedToCamera = true;
 
 
-
-
-
-    
     //  The base of our tank
     tank = new PlayerTank(game);
 
@@ -54,8 +49,8 @@ function create() {
     for (var i = 0; i < enemiesTotal; i++) {
         enemies.push(new EnemyTank(i, game, tank, enemyBullets));
     }
-    
-    
+
+
     //  Explosion pool
     explosions = game.add.group();
 
@@ -66,13 +61,13 @@ function create() {
     }
 
 
-    logo = game.add.sprite(0, 200, 'logo');
+    logo = game.add.sprite(windowWidth/2-400, windowHeight/2-2  00, 'logo');
     logo.fixedToCamera = true;
 
     game.input.onDown.add(removeLogo, this);
 
     game.camera.follow(tank.tank);
-    game.camera.deadzone = new Phaser.Rectangle(150, 150, 500, 300);
+    game.camera.deadzone = new Phaser.Rectangle(windowWidth / 2, windowHeight / 2, 0, 0);
     game.camera.focusOnXY(0, 0);
 
     cursors = game.input.keyboard.createCursorKeys();
