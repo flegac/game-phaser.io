@@ -2,8 +2,9 @@
 This project is a 2D game prototype using Phaser.io.
 
 # Installation :
-npm install
+Run install.bat
 
 # Execution
-- execute run.bat
-- open http://localhost:8080
+- Run run.bat
+
+Game is accessible at http://localhost:8080
